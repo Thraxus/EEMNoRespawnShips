@@ -15,7 +15,7 @@ namespace EEMNoRespawnShips.Data
 	// ReSharper disable once ClassNeverInstantiated.Global
 	public class AiSessionCore : MySessionComponentBase
 	{
-		public static bool IsServer => MyAPIGateway.Multiplayer.IsServer;// { get; private set; }
+		public static bool IsServer => MyAPIGateway.Multiplayer.IsServer;
 
 		private static readonly Dictionary<long, BotBase.OnDamageTaken> DamageHandlers = new Dictionary<long, BotBase.OnDamageTaken>();
 
